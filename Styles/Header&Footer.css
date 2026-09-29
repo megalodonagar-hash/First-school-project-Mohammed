@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 16px 30px;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: darkmagenta;
+}
+
+.nav-links a.active {
+    color: grey;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: pink;
+}
+
+.footer-links a.active {
+    color: grey;
+}
+
+.footer-links a:hover {
+    color: darkmagenta;
+    transition: color 0.2s ease;
+}
+
+.copyright {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-image: url("../images/SwedenFlag.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

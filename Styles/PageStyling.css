@@ -1,0 +1,278 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-page {
+    background-image: url(../images/SpaceV2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Doom img {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.page-image {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.page-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.Doom {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.Doom-text h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+}
+
+.Doom-text p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.about-page {
+    background-image: url("../images/HelloKitty1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.AboutBox {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+}
+
+.TextinBox {
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.contact-page {
+    background-image: url("../images/ContactPageBackgroundDesktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-page h1 {
+    color: white;
+}
+
+.contact-page form {
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+}
+
+.contact-page fieldset {
+    padding: 20px;
+}
+
+.contact-page legend {
+    font-size: 18px;
+}
+
+.contact-page label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-page input[type="email"],
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.contact-page textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-page button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-page button[type="submit"]:hover {
+    background-color: #444;
+}
+
+
+.services-page {
+    background-image: url("../images/ServiceDesktopBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Service-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.Service {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Service h2 {
+    margin-bottom: 15px;
+}
+
+.Service p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.jumpscare {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+}
+
+.jumpscare img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#closeJumpscare {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .about-page {
+        background-image: url("../images/EvilKitty.jpg");
+    }
+
+    .contact-page {
+        background-image: url("../images/ContactPageBackgroundMobile.jpg");
+    }
+
+    .contact-page fieldset {
+        padding: 15px;
+    }
+
+    .contact-page legend {
+        font-size: 18px;
+    }
+
+    .contact-page label {
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    .contact-page input[type="email"] {
+        height: 40px;
+        padding: 8px;
+    }
+
+    .contact-page textarea {
+        height: 90px;
+        padding: 8px;
+    }
+
+    .contact-page button[type="submit"] {
+        margin-top: 12px;
+        padding: 10px;
+    }
+
+    .services-page {
+        background-image: url("../images/ServiceMobileBackground.jpg");
+    }
+
+    .Service-box {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 30px auto;
+        gap: 15px;
+    }
+
+    .Service {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+    }
+
+    .Service h2 {
+        font-size: 22px;
+    }
+
+    .Service p {
+        font-size: 16px;
+    }
+}

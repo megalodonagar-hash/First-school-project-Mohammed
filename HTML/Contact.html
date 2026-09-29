@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/Header&Footer.css">
+    <link rel="stylesheet" href="../Styles/PageStyling.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+    <body class="contact-page">
+        <nav class="navbar">
+            <div>
+                <a href="../index.html" class="logo">Momo</a>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Services.html">Services</a></li>
+                    <li><a href="./Contact.html" class="active">Contact</a></li>
+                </ul>
+        </nav>    
+        <div class="header">
+            <h1>Have any questions? Send me a mail down below</h1>
+        </div>
+
+        <div class="page-image">
+            <img src="../images/Mail image.jpg" alt="A big mail icon">
+        </div>
+
+        <main>
+             <form action="mailto:mohammed.nassrullah@edu.futuregames.se" method="GET"> 
+            <fieldset> 
+                <legend>contact information</legend>
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="body" required></textarea>
+            </fieldset>
+             <button type="submit">Send me a mail</button> </form> </main>
+
+     <footer class="footer">
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Services.html">Services</a>
+            <a href="./Contact.html" class="active">Contact</a>
+        </div>
+            <a href="#" class="copyright" id="JumpScareButton">
+                <p>&copy; 2026 Mohammed</p>
+            </a>
+        <div class="jumpscare" id="jumpscare">
+            <button id="closeJumpscare">✕</button>
+                <img src="../images/Pranked.gif" alt="Jumpscare">
+        </div>
+    </footer>
+    <script src="../Java.js"></script>
+</body>
+</html>
